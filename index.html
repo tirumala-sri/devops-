@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Customer Support IVR</title>
+</head>
+
+<body>
+
+<h2>Welcome to XYZ Online Support</h2>
+
+<button onclick="showMessage(1)">
+Press 1 - Order Status
+</button>
+
+<button onclick="showMessage(2)">
+Press 2 - Returns & Refunds
+</button>
+
+<button onclick="showMessage(3)">
+Press 3 - Technical Support
+</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+function showMessage(option){
+
+if(option == 1){
+document.getElementById("result").innerHTML =
+"Your order is currently being processed.";
+}
+
+else if(option == 2){
+document.getElementById("result").innerHTML =
+"Returns and refunds team will contact you shortly.";
+}
+
+else{
+document.getElementById("result").innerHTML =
+"Technical support team is working on your issue.";
+}
+
+}
+
+</script>
+
+</body>
+</html>
